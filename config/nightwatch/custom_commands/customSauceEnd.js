@@ -1,6 +1,7 @@
 function noop() {}
 
 exports.command = function(result) {
+    console.log('###########################################');
     var SauceLabs = require("saucelabs");
 
     var saucelabs = new SauceLabs({
