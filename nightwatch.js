@@ -39,7 +39,7 @@ module.exports = {
                 browserName: "chrome",
                 javascriptEnabled: true,
                 acceptSslCerts: true,
-                build: `build-${process.env.TRAVIS_JOB_NUMBER}`,
+                build: 'build' + ${process.env.TRAVIS_JOB_NUMBER',
                 'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER
             }
         },
