@@ -9,5 +9,8 @@ module.exports = {
     browser
       .assert.visible('body', 'yah?')
   },
+  afterEach: function(client, done) {
+      client.customSauceEnd(done);
+  },
   after: browser => browser.end(),
 };
