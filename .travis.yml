@@ -1,12 +1,14 @@
 addons:
   sauce_connect: true
+  jwt:
+    secure: XxO5o4O+Rt9sR092P5N+j6cjjBHWJcIuF64SV9m7e+kROQwzwU1CZQKGA3Xui9/uhvDxAIXDWHRZRYpS3QQ8hqjSCP7soTLCmtComeO5D65WhrD4u5rqwQWgb5DL+pDtnxeXBspZcmXwA/zRgnfrfhyugT74wmtYFHbcdWV30ECG3bhx54eUwV47QQKDsrMUEUfErs4Rwr9OrhHWcOimeAUUoTtNBSsHXEeYNUYRIHUFa61vCifJYX7WXaRBkeD/sDRQGbe5n/8zuohv6+ODWmkolfIS3QUzMs/la6lxXawWC9RstaTiH1rqfutEOc8ebJbj9d2fkq0Aji5cNVE+wIr4UTbk1ee0Hs/SL7w+1WehzetGKiaPvfa+pn/44+jXeThEmzAYS+SqSQ/1q7l7tHRv2LRhwv51dLoVCOyRs0HWi1Jr5p9XJVHo/QnoPlIOAvvFWK+UlS3dVcL1xOzBS/t0zvXv8u7n9Cz+lOj+I6wjI4OvIab1Ojus+m6H7IOL7HqiJI/Ol/mJI5nBXmRGW4mo24/IiDM7EckULspCKyqsn+MwmpWsSx6294BCOOr7ChsGq9YBMXs29IkZ8PTlCz5KAliI1ATjFeoPC3s04r5AI9WTuHkBz+jNzDvuWfViKmHuxt7yg/hiGf4Y1REnRLD7ee+RbBuQ6e76gKjutzQ=
 language: node_js
 node_js:
-    - "6"
+- '6'
 install:
-  - npm install -g nightwatch
+- npm install -g nightwatch
 before_script:
-  - npm run serve:dist &
-  - npm run test:e2e
+- npm run serve:dist &
+- npm run test:e2e
 script:
-  - pkill node
+- pkill node
