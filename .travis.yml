@@ -8,5 +8,3 @@ install:
 before_script:
 - npm run serve
 - npm run test:e2e
-script:
-- pkill node
