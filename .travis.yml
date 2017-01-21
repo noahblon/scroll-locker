@@ -1,0 +1,10 @@
+addons:
+  sauce_connect: true
+install:
+  - nvm install 4.0
+  - npm install -g nightwatch
+before_script:
+  - npm run serve:dist &
+script:
+  - nightwatch --test ./test/e2e/test.js --config nightwatch.js,
+  - pkill node

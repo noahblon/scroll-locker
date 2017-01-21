@@ -1,0 +1,20 @@
+{
+  "name": "scroll-locker",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:noahblon/scroll-locker.git",
+  "author": "Noah Blon <noahblon@gmail.com> (noahblon@gmail.com)",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "test": "npm run test:e2e",
+    "test:e2e": "nightwatch --test ./test/e2e/test.js --config nightwatch.js",
+    "validate": "npm run lint test"
+  },
+  "devDependencies": {
+    "eslint": "3.14.0",
+    "eslint-config-kentcdodds": "11.1.0",
+    "nightwatch": "0.9.12",
+    "selenium-download": "2.0.9"
+  }
+}
