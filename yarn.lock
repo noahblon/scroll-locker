@@ -395,6 +395,10 @@ browserify-zlib@^0.1.4:
   dependencies:
     pako "~0.2.0"
 
+browsersync@0.0.1-security:
+  version "0.0.1-security"
+  resolved "https://registry.yarnpkg.com/browsersync/-/browsersync-0.0.1-security.tgz#e885fe4354d2ec5a565c38c4c2bf0a012ad64860"
+
 buffer-shims@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/buffer-shims/-/buffer-shims-1.0.0.tgz#9978ce317388c649ad8793028c3477ef044a8b51"
