@@ -6,5 +6,6 @@ install:
   - npm install -g nightwatch
 before_script:
   - npm run serve:dist &
+  - npm run test:e2e
 script:
   - pkill node
