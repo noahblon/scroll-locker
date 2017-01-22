@@ -1,10 +1,10 @@
-var SauceLabs = require("saucelabs");
 exports.command = function(cb) {
     console.log(cb);
+    var SauceLabs = require("saucelabs");
     console.log(SauceLabs);
     var saucelabs = new SauceLabs({
-        username: 'noah7979',
-        password: 'fe6cc132-1bfc-4017-b29d-e0d5be54f9b8'
+        username: process.env.SAUCE_USERNAME,
+        password: process.env.SAUCE_ACCESS_KEY
     });
     console.log(saucelabs);
     var sessionid = this.capabilities['webdriver.remote.sessionid'];
