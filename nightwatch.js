@@ -30,7 +30,7 @@ module.exports = {
                 "path" : "./reports/e2e/screenshots"
             },
             globals: {
-                waitForConditionTimeout: 10000,
+                waitForConditionTimeout: 60000,
             },
             username: process.env.SAUCE_USERNAME,
             access_key: process.env.SAUCE_ACCESS_KEY,
