@@ -3,10 +3,9 @@ addons:
 language: node_js
 node_js:
 - '6'
-before_install:
-- export | grep SAUCE_
 install:
 - npm install -g nightwatch
+- npm install -g saucelabs
 before_script:
 - npm run serve
 - npm run test:e2e
